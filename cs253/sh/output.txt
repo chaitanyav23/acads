@@ -1,0 +1,33 @@
+
+192.168.1.1
+192.168.1.2
+192.168.1.3
+192.168.1.4
+192.168.1.5
+5 GET
+3 POST
+2 PUT
+Hour 00: 0 requests
+Hour 01: 0 requests
+Hour 02: 0 requests
+Hour 03: 0 requests
+Hour 04: 0 requests
+Hour 05: 0 requests
+Hour 06: 0 requests
+Hour 07: 0 requests
+Hour 08: 0 requests
+Hour 09: 0 requests
+Hour 10: 2 requests
+Hour 11: 1 requests
+Hour 12: 1 requests
+Hour 13: 1 requests
+Hour 14: 1 requests
+Hour 15: 1 requests
+Hour 16: 1 requests
+Hour 17: 1 requests
+Hour 18: 1 requests
+Hour 19: 1 requests
+Hour 20: 1 requests
+Hour 21: 0 requests
+Hour 22: 0 requests
+Hour 23: 0 requests
