@@ -1,0 +1,35 @@
+Part1
+-----
+
+Q1. In testcase1.c, how many times the swapper process got scheduled?
+A1: We wrote the print statement to check the count of swapper process being scheduled. We got 10 print statements. Hence, the process was scheduled 10 times, probably dur to the ticks size of 1 time-unit for sleep of 10time-units  in the code.
+
+Q2. In testcase3.c, how many times the swapper process is scheduled and why?
+A2: The swapper process is scheduled 7 times. This is because swapper will not be scheduled till the completion of processes with ids 2,3 and 4. After the completion of these three processes, swapper process is scheduled till the process with id 1 goes from state WAITING to READY.
+
+Q3. In testcase5.c, how many times the sum value was less than 10 and why?    
+A3: The sum value is less than 10 two times. this is because in the complete exeuction of process 1, process with pid 4 is created twice. This is because process with pid 4 exits, and the process created by fork in process with pid 5 is assigned pid 4. Hence the result.
+
+Part 2
+------
+
+Q1. In testcase1.c, in which level the page table entries for the two addresses
+for which walk_pt is called diverse and why?
+A1: The PFN value for L2 level is the same, but the PFN in L3 differs. This is because the complete code segment (for walk_pt on func address) and stack segment (for walk_pt on stack address) lie in the memory mapped by the same PFN in level two. 
+
+Q2. In testcase2.c, reason about the page table entries at different levels for 
+(ptr+4096) across different invocation of walk_pt. Specifically, differentiate
+the entries w.r.t. the entries corresponding to (ptr)
+A2: In the first invocation, due to lazy allocation, actual pages are not allocated to ptr and the page next to ptr (ptr + 4096). After setting value at ptr, a page is allocated to page alligned address ptr, because of which we get L3 and L4 entry for ptr, but only L3 entry for (ptr + 4096). Finally after setting value at (ptr + 4096), the page next to ptr is allocated and hence all entries corresponding to ptr + 4096 are present
+
+Q3. Explain the gemOS physical memory allocation logic for the user stack
+    region by examining the o/p of testcase4.c.
+A3: Pages are allocated lazily, but the stack segment is continuous. This is evident from the output because the page which is two pages prior to &x is not allocated until a value is written in it. But as soon as a value is written, the page in between is no longer just a virtual page, because actual page is allocated to it. 
+
+Q4. In testcase5.c, the PFN used to maintain L4 page table for the two addresses
+    are same. (True/False) with justification.
+A4: False. This is because the two addresses are 8 MB apart, which cannot be addressed by a same L4 page table entry (It can store at most 2 MB. We get 2 MB because of 9 + 12 bits of address passed). 
+
+Q5. Which bit is used to maintain the `write' permission for a page? Justify.
+A5: The third LSB in flag (zero indexing) is used to maintain write permission. This is evident after running first test case because the two addresses passed correspond to code and stack segment respectively. The flag of these two addresses differ at only one (third LSB) bit, which must be write permission because code is RO, but stack can be overwritten.
+      

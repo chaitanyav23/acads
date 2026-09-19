@@ -1,0 +1,5 @@
+Testcase 1 Expected: 95 Output: 95 Serial Time: 58 Parallel Time:267
+Testcase 2 Expected: 157 Output: 157 Serial Time: 162 Parallel Time:389
+Testcase 3 Expected: 13 Output: 13 Serial Time: 2363 Parallel Time:1739
+Testcase 4 Expected: 66 Output: 66 Serial Time: 52634 Parallel Time:32983
+Testcase 5 Expected: 97 Output: 97 Serial Time: 1282436 Parallel Time:808739
