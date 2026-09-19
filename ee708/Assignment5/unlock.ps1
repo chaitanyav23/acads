@@ -1,0 +1,19 @@
+param (
+    [Parameter(Mandatory=$true, Position=0)] [string]$InputFile,
+    [Parameter(Mandatory=$true, Position=1)] [string]$OutputFile
+)
+
+# Prompt for password securely
+$Password = Read-Host "Enter PDF Password" -AsSecureString
+$PassPtr = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($Password)
+$PlainPass = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($PassPtr)
+
+# Run qpdf
+wsl qpdf --password="$PlainPass" --decrypt "$InputFile" "$OutputFile"
+
+if ($LASTEXITCODE -eq 0) {
+    Write-Host "Success: '$OutputFile' has been created." -ForegroundColor Green
+} else {
+    Write-Host "Error: Failed to decrypt the PDF." -ForegroundColor Red
+}
+
