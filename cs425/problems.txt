@@ -1,0 +1,40 @@
+  1. Immediate Practice: Chapter 1 (Foundations)
+  Matches Modules 1 & 2.
+  Since you just finished these, do these specific problems to solidify the "Delay & Throughput" concepts which are
+  high-yield for exams:
+   * Packet vs. Circuit Switching: P8, P9
+   * Delays (Transmission, Propagation, End-to-End): P10, and the example on pg. 37.
+   * Throughput: P20 (Figure 1.20)
+   * Layering: Review the "IP Stack" concepts.
+
+
+  2. The "Kurose Gap" Warning: Modules 6, 7, 8, 9
+  Matches Physical Layer Encoding.
+  Crucial Note: The Kurose book (Computer Networking: A Top-Down Approach) is famous for skipping the "Physical Layer"
+  details like NRZ encoding, Manchester, PCM, or ASK/FSK.
+   * What to do: Do not look for practice problems for Modules 6 & 7 in Kurose; you won't find them.
+   * Alternative: Use Forouzan (Data Communications and Networking) or your lecture slides for these. Practice drawing
+     NRZ-I, Manchester, and calculating PCM bit rates there.
+
+
+  3. Next Step: Chapter 6 (Link Layer & Error Control)
+  Matches Phase 2 (Modules 11, 12, 13, 16, 17).
+  As soon as you start Modules 11-13 (CRC, Parity), jump back into Kurose Chapter 6:
+   * Error Detection: P1, P2 (Parity), P5, P6 (CRC).
+   * Multiple Access (Phase 3): P8, P9 (Slotted ALOHA/CSMA).
+
+
+  4. The "Out of Order" Chapter: Chapter 3 (Reliable Transfer)
+  Matches Phase 2 (Modules 14 & 15).
+  Your study plan places Flow & Error Control (ARQ) in Phase 2. In Kurose, these are located in Chapter 3 (Transport
+  Layer), not Chapter 6.
+   * When you reach Modules 14/15: Do Kurose P27 (Sequence numbers), and study the rdt (Reliable Data Transfer) figures
+     (rdt 2.2, 3.0) in Chapter 3.
+
+
+  Summary Practice Path:
+   1. NOW: Kurose Chapter 1 (Problems P8, P9, P10, P20).
+   2. FOR ENCODING (6, 7, 8, 9): Use lecture slides/Forouzan (Kurose won't help here).
+   3. AFTER MOD 12: Kurose Chapter 6 (CRC/Parity problems).
+   4. AFTER MOD 14/15: Kurose Chapter 3 (Stop-and-Wait, GBN, SR problems).
+

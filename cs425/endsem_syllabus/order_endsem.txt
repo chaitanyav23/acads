@@ -1,0 +1,54 @@
+Phase 1: The Foundation (Network Layer Basics)
+
+Don't skip the "Intro" modules. They set the stage for everything else.
+
+
+
+Module 22: Network layer intro
+
+Module 23: Router architecture
+
+Module 24 & 25: IPv4 Addressing and Forwarding (High Priority: You must master subnetting and CIDR before moving on).
+
+Module 32: ARP (Study this now because it's the "bridge" between the Network and Link layers).
+
+
+Phase 2: The "Brain" of the Network (Routing & Control)
+
+Now that you know how a single router works, study how they talk to each other.
+
+
+
+Module 28 & 29: Routing (LS and DV) — These are the fundamental algorithms.
+
+Module 30 & 31: Intra-AS and BGP (The "Real World" application of routing).
+
+Module 27: ICMP (The "troubleshooting" protocol).
+
+Module 26: NAT and IPv6 (How we handle the shortage of IP addresses).
+
+
+Phase 3: The "Delivery" Service (Transport Layer)
+
+This is where the math for congestion and flow control comes in.
+
+
+
+Module 33 & 34: Transport Intro and UDP (The simple stuff).
+
+Module 35 & 36: TCP Overview and Connection Management (Handshakes).
+
+Module 19 & 20: TCP Congestion Control (Critical: This is usually the most technical part of the exam).
+
+Module 21 (Week 10): Socket Programming (Seeing how code interacts with the Transport layer).
+
+
+Phase 4: The Ends of the Pipe (Application & Security)
+
+Once you understand how data moves, look at what the user sees and how to keep it safe.
+
+
+
+Module 21 & 22 (Week 11): Application Layer (DNS, HTTP).
+
+Module 40: Network Security

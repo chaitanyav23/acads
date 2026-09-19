@@ -1,0 +1,32 @@
+  Phase 1: The Basics & Physical Layer (Hours 1–6)
+   * Hours 1–2: Foundations (Modules 1 & 2)
+       * Understand the OSI vs TCP/IP models. Memorize the layers and their primary functions. This is the "map" for
+         everything else.
+   * Hours 3–5: Signals & Encoding (Modules 6, 7, 8, 9)
+       * Crucial: Focus on Digital-to-Digital Encoding (Line coding: NRZ, Manchester, Differential Manchester).
+       * Understand Modulation (ASK, FSK, PSK, QAM) and PCM (Sampling/Quantization). These often appear as numericals or
+         diagram questions.
+   * Hour 6: Transmission & Multiplexing (Modules 3, 4, 10)
+       * Skim Modules 3 & 4 (Guided/Unguided media). Just know the types (Fiber, Coaxial, etc.).
+       * Focus on Module 10: FDM, TDM, and WDM. Understand the difference between Synchronous and Statistical TDM.
+
+
+  Phase 2: Data Link Layer - The "Heart" of Midsem (Hours 7–16)
+   * Hours 7–10: Error Detection & Correction (Modules 11, 12, 13)
+       * HIGH PRIORITY: Master CRC (Cyclic Redundancy Check). You will likely get a numerical on this.
+       * Understand Checksums and Hamming Code (Error Correction).
+   * Hours 11–14: Flow and Error Control (Modules 14 & 15)
+       * HIGH PRIORITY: Understand the ARQ protocols: Stop-and-Wait, Go-Back-N, and Selective Repeat.
+       * Know how to calculate Efficiency/Utilization for these protocols. This is a very common exam topic.
+   * Hours 15–16: Switching (Module 21)
+       * Understand the difference between Circuit Switching (dedicated path) and Packet Switching (Datagram vs. Virtual
+         Circuit).
+
+
+  Phase 3: MAC & LAN (Hours 17–21)
+   * Hours 17–19: Multiple Access (Modules 16, 17, 18)
+       * Focus on CSMA/CD (Ethernet) and CSMA/CA (Wireless).
+       * Understand Alphas, Slotted ALOHA, and Controlled Access (Polling, Token Passing).
+   * Hours 20–21: LAN & Networking Devices (Modules 19 & 20)
+       * Ethernet standards and how Hubs vs. Switches work (Collision domains vs. Broadcast domains).
+
